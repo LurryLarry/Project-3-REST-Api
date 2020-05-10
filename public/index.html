@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie reviews</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/mycss.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1>Elokuva arvostelu REST-API</h1>
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">HTTP</th>
+          <th scope="col">ENDPOINTS</th>
+          <th scope="col">RESPONSE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">GET</th>
+          <td>/api/arvostelut</td>
+          <td>Hakee kaikki arvostelut</td>
+
+        </tr>
+        <tr>
+          <th scope="row">GET</th>
+          <td>/api/arvostelut/:id</td>
+          <td>Hakee arvostelun id:n perusteella</td>
+
+        </tr>
+        <tr>
+          <th scope="row">POST</th>
+          <td>/api/lisaa/</td>
+          <td>Lisää arvostelun käyttäjän syöttämien tietojen perusteella (esim. form)</td>
+
+        </tr>
+        <tr>
+          <th scope="row">PUT</th>
+          <td>/api/muokkaa/:id</td>
+          <td>Muokkaa arvostelua id:n perusteella</td>
+
+        </tr>
+        <tr>
+          <th scope="row">DELETE</th>
+          <td>/api/poista/:id</td>
+          <td>Poistaa arvostelun id:n perusteella</td>
+
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</body>
+
+</html>
