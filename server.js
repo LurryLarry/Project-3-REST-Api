@@ -58,8 +58,8 @@ app.post("/api/lisaa", function (req, res) {
   uusiArvostelu.save(function (err, result) {
     if (err) {
       console.log("Epäonnistui: " + err);
-      return res.status(400).send() // Virheilmoitus jos käyttäjä ei täytä arvostelun tietoja
-      el
+      return res.status(400).send(); // Virheilmoitus jos käyttäjä ei täytä arvostelun tietoja
+
     }
     const response = {
       message: "Arvostelu lisätty onnistuneesti", // Ilmoitus onnistuneesta poistosta
